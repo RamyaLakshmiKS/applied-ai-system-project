@@ -1,0 +1,25 @@
+flowchart TD
+    A["👤 Player Guesses<br/>Number Input"] --> B["🎮 Game Logic<br/>Check Guess"]
+    B --> C["💾 Session State<br/>Store History & Stats"]
+    C --> D["🔍 Retriever<br/>Get all game history<br/>& patterns"]
+    D --> E["🤖 AI Coach Agent<br/>Claude API<br/>Analyze strategy"]
+    E --> F["📊 Strategy Analyzer<br/>Find patterns<br/>in guesses"]
+    F --> G["✅ Quality Evaluator<br/>Score coaching quality<br/>Validate reliability"]
+    G --> H["💡 Coach Output<br/>Display hints &<br/>personalized advice"]
+    H --> A
+    G --> I["📝 Event Logger<br/>Log all AI decisions<br/>& game events"]
+    I --> J["🧪 Testing Suite<br/>Verify coaching<br/>effectiveness"]
+    J -.->|Feedback| E
+    J -.->|Metrics| K["📈 Performance Report<br/>Coach accuracy &<br/>player improvement"]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e9
+    style E fill:#fce4ec
+    style F fill:#e0f2f1
+    style G fill:#fff9c4
+    style H fill:#e1f5ff
+    style I fill:#f1f8e9
+    style J fill:#ede7f6
+    style K fill:#fbe9e7
