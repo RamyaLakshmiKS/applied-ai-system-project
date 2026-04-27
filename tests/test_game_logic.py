@@ -1,5 +1,5 @@
 import pytest
-from logic_utils import check_guess, get_range_for_difficulty, parse_guess
+from src.logic_utils import check_guess, get_range_for_difficulty, parse_guess
 
 
 # ============================================================================
